@@ -55,12 +55,6 @@
 
 /* COMMON */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .row::after {
   content: '';
   display: table;
@@ -79,9 +73,81 @@ img {
   clear: both;
 }
 
+/* tablet */
+
+@media (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .row {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .row > div {
+    padding: 20px 0;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 45%;
+    margin: 0 2.5%;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin: 0;
+  }
+
+  img {
+    height: 25vw;
+  }
+
+  h1 {
+    font-size: 32px;
+    padding: 20px 0;
+  }
+   h3 {
+     padding: 4px 0;
+   }
+
+  #steps {
+    background-color: white;
+  }
+
+  #lezioni, #why {
+    background-color: #84d4f8;
+  }
+
+  #why hr {
+    display: none;
+  }
+
+}
+
 /* mobile */
 
-@media (max-width: 419px) {
+@media (max-width: 420px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   .row {
     font-size: 14px;
@@ -126,3 +192,4 @@ img {
   }
 
 }
+
